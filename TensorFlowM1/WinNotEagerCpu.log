@@ -1,0 +1,110 @@
+2022-08-28 23:52:43.637799: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-08-28 23:52:43.637960: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+TensorFlow version: 2.9.1
+2022-08-28 23:52:51.764573: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-08-28 23:52:51.765867: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2022-08-28 23:52:51.767748: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2022-08-28 23:52:51.768800: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2022-08-28 23:52:51.776855: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2022-08-28 23:52:51.778055: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2022-08-28 23:52:51.779414: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2022-08-28 23:52:51.780641: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2022-08-28 23:52:51.780783: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Num CPUs Available:  1
+Num GPUs Available:  0
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[]
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = False
+eagerly = False
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+tf.executing_eagerly() = True
+Downloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to ~\tensorflow_datasets\mnist\3.0.1...
+Extraction completed...: 100%|████████████████████████████████████████████████████████| 4/4 [00:03<00:00,  1.29 file/s]
+Dl Size...: 100%|████████████████████████████████████████████████████████████████████| 10/10 [00:03<00:00,  3.21 MiB/s]
+Dl Completed...: 100%|█████████████████████████████████████████████████████████████████| 4/4 [00:03<00:00,  1.28 url/s]
+Generating splits...:   0%|                                   2022-08-28 23:52:55.418536: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Dataset mnist downloaded and prepared to ~\tensorflow_datasets\mnist\3.0.1. Subsequent calls will reuse this data.
+Epoch 1/12
+469/469 [==============================] - 35s 71ms/step - loss: 0.1500 - accuracy: 0.9565 - val_loss: 0.0538 - val_accuracy: 0.9836
+Epoch 2/12
+469/469 [==============================] - 34s 73ms/step - loss: 0.0424 - accuracy: 0.9869 - val_loss: 0.0358 - val_accuracy: 0.9891
+Epoch 3/12
+469/469 [==============================] - 39s 83ms/step - loss: 0.0254 - accuracy: 0.9918 - val_loss: 0.0353 - val_accuracy: 0.9875
+Epoch 4/12
+469/469 [==============================] - 41s 86ms/step - loss: 0.0166 - accuracy: 0.9945 - val_loss: 0.0391 - val_accuracy: 0.9870
+Epoch 5/12
+469/469 [==============================] - 34s 73ms/step - loss: 0.0125 - accuracy: 0.9959 - val_loss: 0.0352 - val_accuracy: 0.9896
+Epoch 6/12
+469/469 [==============================] - 35s 74ms/step - loss: 0.0096 - accuracy: 0.9969 - val_loss: 0.0345 - val_accuracy: 0.9883
+Epoch 7/12
+469/469 [==============================] - 36s 77ms/step - loss: 0.0081 - accuracy: 0.9973 - val_loss: 0.0392 - val_accuracy: 0.9880
+Epoch 8/12
+469/469 [==============================] - 34s 73ms/step - loss: 0.0058 - accuracy: 0.9980 - val_loss: 0.0356 - val_accuracy: 0.9894
+Epoch 9/12
+469/469 [==============================] - 34s 72ms/step - loss: 0.0048 - accuracy: 0.9984 - val_loss: 0.0409 - val_accuracy: 0.9893
+Epoch 10/12
+469/469 [==============================] - 33s 71ms/step - loss: 0.0052 - accuracy: 0.9983 - val_loss: 0.0439 - val_accuracy: 0.9878
+Epoch 11/12
+469/469 [==============================] - 33s 71ms/step - loss: 0.0049 - accuracy: 0.9985 - val_loss: 0.0425 - val_accuracy: 0.9899
+Epoch 12/12
+469/469 [==============================] - 35s 74ms/step - loss: 0.0026 - accuracy: 0.9991 - val_loss: 0.0564 - val_accuracy: 0.9879
+0:07:03.279670
+
+(TensorFlowM1) C:\Users\peter.sels\projects\OnComputation\TensorFlowM1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

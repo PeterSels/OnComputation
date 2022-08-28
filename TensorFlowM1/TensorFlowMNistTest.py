@@ -60,6 +60,12 @@ print(f'tf.executing_eagerly() = {tf.executing_eagerly()}')  # Gives True when l
 #NotEagerCpuGpu.log:   0:00:51.107395
 #So 4.6 times faster with than without GPU.
 
+# I get on a Dell Precision i7 9850H CPU @ 2.6GHz and 16 GB RAM with Intel UHD Graphics 630 GPU
+# WinEagerCpu.log:0:11:05.841665
+# WinNotEagerCpu.log:0:07:03.279670
+# So this Wintel machine seems twice as slow as the Apple.
+# For this Wintel machine I could not yet enable the GPU to take part in the ML tasks.
+
 tf.config.list_physical_devices('GPU')
 from timeit import default_timer as timer
 from datetime import timedelta
@@ -117,3 +123,4 @@ model.fit(
 )
 end = timer()
 print(timedelta(seconds=end-start))
+

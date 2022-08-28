@@ -1,0 +1,58 @@
+2022-08-29 00:04:41.814936: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-08-29 00:04:41.815093: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+TensorFlow version: 2.9.1
+2022-08-29 00:04:52.556580: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-08-29 00:04:52.557846: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2022-08-29 00:04:52.560452: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2022-08-29 00:04:52.561591: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2022-08-29 00:04:52.573933: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2022-08-29 00:04:52.575046: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2022-08-29 00:04:52.576123: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2022-08-29 00:04:52.577156: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2022-08-29 00:04:52.577277: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Num CPUs Available:  1
+Num GPUs Available:  0
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[]
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = False
+eagerly = True
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+tf.executing_eagerly() = True
+2022-08-29 00:04:52.676089: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\peter.sels\Anaconda3\envs\TensorFlowM1\lib\site-packages\tensorflow\python\data\ops\structured_function.py:264: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Epoch 1/12
+469/469 [==============================] - 57s 120ms/step - loss: 0.1603 - accuracy: 0.9521 - val_loss: 0.0457 - val_accuracy: 0.9848
+Epoch 2/12
+469/469 [==============================] - 59s 125ms/step - loss: 0.0421 - accuracy: 0.9867 - val_loss: 0.0334 - val_accuracy: 0.9881
+Epoch 3/12
+469/469 [==============================] - 55s 117ms/step - loss: 0.0269 - accuracy: 0.9915 - val_loss: 0.0352 - val_accuracy: 0.9878
+Epoch 4/12
+469/469 [==============================] - 55s 117ms/step - loss: 0.0171 - accuracy: 0.9944 - val_loss: 0.0327 - val_accuracy: 0.9893
+Epoch 5/12
+469/469 [==============================] - 56s 119ms/step - loss: 0.0128 - accuracy: 0.9955 - val_loss: 0.0333 - val_accuracy: 0.9901
+Epoch 6/12
+469/469 [==============================] - 56s 118ms/step - loss: 0.0099 - accuracy: 0.9967 - val_loss: 0.0383 - val_accuracy: 0.9882
+Epoch 7/12
+469/469 [==============================] - 53s 112ms/step - loss: 0.0087 - accuracy: 0.9970 - val_loss: 0.0410 - val_accuracy: 0.9871
+Epoch 8/12
+469/469 [==============================] - 53s 113ms/step - loss: 0.0066 - accuracy: 0.9978 - val_loss: 0.0377 - val_accuracy: 0.9891
+Epoch 9/12
+469/469 [==============================] - 54s 114ms/step - loss: 0.0040 - accuracy: 0.9988 - val_loss: 0.0422 - val_accuracy: 0.9896
+Epoch 10/12
+469/469 [==============================] - 56s 120ms/step - loss: 0.0072 - accuracy: 0.9977 - val_loss: 0.0445 - val_accuracy: 0.9877
+Epoch 11/12
+469/469 [==============================] - 58s 123ms/step - loss: 0.0036 - accuracy: 0.9987 - val_loss: 0.0572 - val_accuracy: 0.9872
+Epoch 12/12
+469/469 [==============================] - 55s 118ms/step - loss: 0.0051 - accuracy: 0.9983 - val_loss: 0.0406 - val_accuracy: 0.9896
+0:11:05.841665
