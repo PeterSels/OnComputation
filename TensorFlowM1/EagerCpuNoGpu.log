@@ -1,0 +1,47 @@
+TensorFlow version: 2.9.2
+Num CPUs Available:  1
+Num GPUs Available:  1
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Disabling all devices of type: GPU.
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = True
+eagerly = True
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+tf.executing_eagerly() = True
+/Users/peter/miniforge3/envs/apple_tensorflow_from_yml/lib/python3.8/site-packages/tensorflow/python/data/ops/structured_function.py:264: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Epoch 1/12
+2022-08-28 22:10:34.272223: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+469/469 [==============================] - 27s 55ms/step - loss: 0.1599 - accuracy: 0.9529 - val_loss: 0.0531 - val_accuracy: 0.9828
+Epoch 2/12
+469/469 [==============================] - 25s 54ms/step - loss: 0.0424 - accuracy: 0.9868 - val_loss: 0.0386 - val_accuracy: 0.9868
+Epoch 3/12
+469/469 [==============================] - 25s 54ms/step - loss: 0.0277 - accuracy: 0.9917 - val_loss: 0.0346 - val_accuracy: 0.9897
+Epoch 4/12
+469/469 [==============================] - 27s 57ms/step - loss: 0.0184 - accuracy: 0.9942 - val_loss: 0.0437 - val_accuracy: 0.9879
+Epoch 5/12
+469/469 [==============================] - 26s 56ms/step - loss: 0.0133 - accuracy: 0.9956 - val_loss: 0.0464 - val_accuracy: 0.9871
+Epoch 6/12
+469/469 [==============================] - 27s 57ms/step - loss: 0.0093 - accuracy: 0.9970 - val_loss: 0.0495 - val_accuracy: 0.9860
+Epoch 7/12
+469/469 [==============================] - 26s 55ms/step - loss: 0.0087 - accuracy: 0.9970 - val_loss: 0.0324 - val_accuracy: 0.9904
+Epoch 8/12
+469/469 [==============================] - 26s 56ms/step - loss: 0.0061 - accuracy: 0.9977 - val_loss: 0.0563 - val_accuracy: 0.9855
+Epoch 9/12
+469/469 [==============================] - 26s 55ms/step - loss: 0.0068 - accuracy: 0.9979 - val_loss: 0.0428 - val_accuracy: 0.9879
+Epoch 10/12
+469/469 [==============================] - 26s 55ms/step - loss: 0.0053 - accuracy: 0.9983 - val_loss: 0.0495 - val_accuracy: 0.9870
+Epoch 11/12
+469/469 [==============================] - 26s 55ms/step - loss: 0.0037 - accuracy: 0.9987 - val_loss: 0.0398 - val_accuracy: 0.9902
+Epoch 12/12
+469/469 [==============================] - 26s 55ms/step - loss: 0.0030 - accuracy: 0.9989 - val_loss: 0.0451 - val_accuracy: 0.9905
+0:05:13.037244
+

@@ -1,0 +1,53 @@
+TensorFlow version: 2.9.2
+Num CPUs Available:  1
+Num GPUs Available:  1
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = False
+eagerly = False
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+tf.executing_eagerly() = True
+Metal device set to: Apple M1 Max
+
+systemMemory: 64.00 GB
+maxCacheSize: 24.00 GB
+
+2022-08-28 22:06:31.591822: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2022-08-28 22:06:31.591964: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+Epoch 1/12
+2022-08-28 22:06:31.842953: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+2022-08-28 22:06:31.843096: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:113] Plugin optimizer for device_type GPU is enabled.
+469/469 [==============================] - ETA: 0s - loss: 0.1657 - accuracy: 0.95162022-08-28 22:06:37.032584: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:113] Plugin optimizer for device_type GPU is enabled.
+469/469 [==============================] - 6s 9ms/step - loss: 0.1657 - accuracy: 0.9516 - val_loss: 0.0591 - val_accuracy: 0.9808
+Epoch 2/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0451 - accuracy: 0.9858 - val_loss: 0.0373 - val_accuracy: 0.9873
+Epoch 3/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0274 - accuracy: 0.9917 - val_loss: 0.0382 - val_accuracy: 0.9876
+Epoch 4/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0196 - accuracy: 0.9934 - val_loss: 0.0396 - val_accuracy: 0.9873
+Epoch 5/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0140 - accuracy: 0.9954 - val_loss: 0.0408 - val_accuracy: 0.9879
+Epoch 6/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0103 - accuracy: 0.9964 - val_loss: 0.0497 - val_accuracy: 0.9863
+Epoch 7/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0085 - accuracy: 0.9971 - val_loss: 0.0465 - val_accuracy: 0.9882
+Epoch 8/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0061 - accuracy: 0.9978 - val_loss: 0.0490 - val_accuracy: 0.9890
+Epoch 9/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0060 - accuracy: 0.9980 - val_loss: 0.0462 - val_accuracy: 0.9887
+Epoch 10/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0062 - accuracy: 0.9978 - val_loss: 0.0406 - val_accuracy: 0.9893
+Epoch 11/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0028 - accuracy: 0.9992 - val_loss: 0.0426 - val_accuracy: 0.9906
+Epoch 12/12
+469/469 [==============================] - 4s 9ms/step - loss: 0.0037 - accuracy: 0.9987 - val_loss: 0.0466 - val_accuracy: 0.9899
+0:00:51.107395
+

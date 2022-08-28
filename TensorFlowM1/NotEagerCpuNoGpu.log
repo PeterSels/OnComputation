@@ -1,0 +1,45 @@
+TensorFlow version: 2.9.2
+Num CPUs Available:  1
+Num GPUs Available:  1
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Disabling all devices of type: GPU.
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = True
+eagerly = False
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+tf.executing_eagerly() = True
+Epoch 1/12
+2022-08-28 22:27:31.568747: W tensorflow/core/platform/profile_utils/cpu_utils.cc:128] Failed to get CPU frequency: 0 Hz
+469/469 [==============================] - 21s 42ms/step - loss: 0.1575 - accuracy: 0.9539 - val_loss: 0.0538 - val_accuracy: 0.9822
+Epoch 2/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0430 - accuracy: 0.9864 - val_loss: 0.0383 - val_accuracy: 0.9865
+Epoch 3/12
+469/469 [==============================] - 20s 43ms/step - loss: 0.0275 - accuracy: 0.9912 - val_loss: 0.0325 - val_accuracy: 0.9877
+Epoch 4/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0180 - accuracy: 0.9941 - val_loss: 0.0316 - val_accuracy: 0.9894
+Epoch 5/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0125 - accuracy: 0.9959 - val_loss: 0.0343 - val_accuracy: 0.9894
+Epoch 6/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0081 - accuracy: 0.9975 - val_loss: 0.0353 - val_accuracy: 0.9884
+Epoch 7/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0080 - accuracy: 0.9975 - val_loss: 0.0335 - val_accuracy: 0.9900
+Epoch 8/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0071 - accuracy: 0.9974 - val_loss: 0.0387 - val_accuracy: 0.9890
+Epoch 9/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0068 - accuracy: 0.9975 - val_loss: 0.0411 - val_accuracy: 0.9896
+Epoch 10/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0050 - accuracy: 0.9985 - val_loss: 0.0546 - val_accuracy: 0.9856
+Epoch 11/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0045 - accuracy: 0.9988 - val_loss: 0.0391 - val_accuracy: 0.9900
+Epoch 12/12
+469/469 [==============================] - 20s 42ms/step - loss: 0.0025 - accuracy: 0.9991 - val_loss: 0.0400 - val_accuracy: 0.9901
+0:03:58.723621
+

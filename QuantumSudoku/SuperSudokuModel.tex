@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+
+The Super Sudoku Model  is:
+
+
+% row-wise
+\[\sum_{n \in R} b_{r,c,n} = 1, \forall (c,n) \in C \times N\]
+
+% col-wise
+\[\sum_{n \in C} b_{r,c,n} = 1, \forall (r,n) \in R \times N\]
+
+% num-wise
+\[\sum_{n \in N} b_{r,c,n} = 1, \forall (r,c) \in R \times C\]
+
+% sub-square-wise
+\[\sum_{(r\_, c\_) \in S \times S} b_{r \cdot D + r\_, c \cdot D + c\_, n} = 1, \forall (r,c,n) \in S \times S \times N\]
+
+% preset-squares
+\[\sum_{n \in N} b_{r,c,n} \cdot (n+1) = f_{r,c}, \forall (r,c) \in dom(f_{r,c})\]
+
+
+The Hamiltonian for a Quantum System is in general:
+
+\[ \sum_{i \in I} c_i \cdot b_i +  \sum_{(i,j) \in (I \times I):i<j} c_{i,j} \cdot b_i \cdot b_j \]
+
+\end{document}
