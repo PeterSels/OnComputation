@@ -52,19 +52,22 @@ print(tf.config.get_visible_devices())
 tf.config.run_functions_eagerly(eagerly) # Only seems to have effect when restarting the jupyter notebook.
 print(f'tf.executing_eagerly() = {tf.executing_eagerly()}')  # Gives True when line above set it to False!
 
-# I get on a Apple MacBook Pro 16" M1 Max, for the model fitting (training) the process times:
-#EagerCpuNoGpu.log:    0:05:13.037244
-#EagerCpuGpu.log:      0:01:33.897871
-#So 3.4 times faster with than without GPU.
-#NotEagerCpuNoGpu.log: 0:03:58.723621
-#NotEagerCpuGpu.log:   0:00:51.107395
-#So 4.6 times faster with than without GPU.
+"""
+I get on a Apple MacBook Pro 16" M1 Max, for the model fitting (training) the process times:
+https://henk-celcius.medium.com/installing-and-cpu-vs-gpu-testing-tensorflow-on-an-apple-mac-m1-arm-native-via-miniforge-90d49eaf05ea
+MacM1MaxEagerCpuNoGpu.log:          0:05:13.037244
+MacM1MaxNotEagerCpuNoGpu.log:       0:03:58.723621
+MacM1MaxEagerCpuGpu.log:            0:01:33.897871
+MacM1MaxNotEagerCpuGpu.log:         0:00:51.107395
 
-# I get on a Dell Precision i7 9850H CPU @ 2.6GHz and 16 GB RAM with Intel UHD Graphics 630 GPU
-# WinEagerCpu.log:0:11:05.841665
-# WinNotEagerCpu.log:0:07:03.279670
-# So this Wintel machine seems twice as slow as the Apple.
-# For this Wintel machine I could not yet enable the GPU to take part in the ML tasks.
+I get on a Dell Precision i7 9850H CPU @ 2.6GHz and 16 GB RAM with Intel UHD Graphics 630 GPU
+https://henk-celcius.medium.com/installing-tensorflow-on-a-wintel-machine-with-quadro-t1000-gpu-performance-comparison-with-and-c64b6c1b9cd1
+
+WinQuadroT1000EagerCpuNoGpu.log:    0:11:05.841665
+WinQuadroT1000NotEagerCpuNoGpu.log: 0:07:03.279670
+Wini7QuadroT1000EagerCpuGpu.log:    0:02:09.316872
+Wini7QuadroT1000NotEagerCpuGpu.log: 0:01:22.671263
+"""
 
 tf.config.list_physical_devices('GPU')
 from timeit import default_timer as timer
