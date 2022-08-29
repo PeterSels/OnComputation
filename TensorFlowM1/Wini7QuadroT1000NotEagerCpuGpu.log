@@ -1,0 +1,72 @@
+TensorFlow version: 2.9.1
+Num CPUs Available:  1
+Num GPUs Available:  1
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = False
+eagerly = False
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+tf.executing_eagerly() = True
+2022-08-29 14:35:34.223780: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-08-29 14:35:34.720703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2149 MB memory:  -> device: 0, name: Quadro T1000, pci bus id: 0000:01:00.0, compute capability: 7.5
+Epoch 1/12
+2022-08-29 14:35:37.248680: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+469/469 [==============================] - 12s 14ms/step - loss: 0.1678 - accuracy: 0.9507 - val_loss: 0.0459 - val_accuracy: 0.9850
+Epoch 2/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0458 - accuracy: 0.9862 - val_loss: 0.0422 - val_accuracy: 0.9859
+Epoch 3/12
+469/469 [==============================] - 7s 14ms/step - loss: 0.0289 - accuracy: 0.9909 - val_loss: 0.0342 - val_accuracy: 0.9891
+Epoch 4/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0184 - accuracy: 0.9941 - val_loss: 0.0383 - val_accuracy: 0.9883
+Epoch 5/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0136 - accuracy: 0.9954 - val_loss: 0.0368 - val_accuracy: 0.9898
+Epoch 6/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0101 - accuracy: 0.9970 - val_loss: 0.0344 - val_accuracy: 0.9892
+Epoch 7/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0078 - accuracy: 0.9975 - val_loss: 0.0371 - val_accuracy: 0.9889
+Epoch 8/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0069 - accuracy: 0.9977 - val_loss: 0.0368 - val_accuracy: 0.9907
+Epoch 9/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0057 - accuracy: 0.9980 - val_loss: 0.0358 - val_accuracy: 0.9901
+Epoch 10/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0050 - accuracy: 0.9983 - val_loss: 0.0533 - val_accuracy: 0.9881
+Epoch 11/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0054 - accuracy: 0.9982 - val_loss: 0.0394 - val_accuracy: 0.9912
+Epoch 12/12
+469/469 [==============================] - 6s 14ms/step - loss: 0.0029 - accuracy: 0.9991 - val_loss: 0.0398 - val_accuracy: 0.9914
+0:01:22.671263
+
+(TensorFlowWin) C:\Users\peter.sels\projects\OnComputation\TensorFlowM1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

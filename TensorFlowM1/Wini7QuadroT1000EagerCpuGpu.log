@@ -1,0 +1,48 @@
+TensorFlow version: 2.9.1
+Num CPUs Available:  1
+Num GPUs Available:  1
+List of all physical devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+List of physical CPU devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')]
+List of physical GPU devices is:
+[PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+---
+disable_cpu_visibility = False
+disable_gpu_visibility = False
+eagerly = True
+---
+List of visible devices is:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+tf.executing_eagerly() = True
+2022-08-29 14:39:43.982014: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-08-29 14:39:44.393826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2147 MB memory:  -> device: 0, name: Quadro T1000, pci bus id: 0000:01:00.0, compute capability: 7.5
+C:\Users\peter.sels\Anaconda3\envs\TensorFlowWin\lib\site-packages\tensorflow\python\data\ops\structured_function.py:264: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Epoch 1/12
+2022-08-29 14:39:46.164731: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+469/469 [==============================] - 14s 23ms/step - loss: 0.1615 - accuracy: 0.9524 - val_loss: 0.0604 - val_accuracy: 0.9801
+Epoch 2/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0467 - accuracy: 0.9852 - val_loss: 0.0432 - val_accuracy: 0.9863
+Epoch 3/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0307 - accuracy: 0.9904 - val_loss: 0.0381 - val_accuracy: 0.9885
+Epoch 4/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0191 - accuracy: 0.9941 - val_loss: 0.0400 - val_accuracy: 0.9881
+Epoch 5/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0144 - accuracy: 0.9954 - val_loss: 0.0428 - val_accuracy: 0.9887
+Epoch 6/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0105 - accuracy: 0.9966 - val_loss: 0.0391 - val_accuracy: 0.9890
+Epoch 7/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0088 - accuracy: 0.9973 - val_loss: 0.0507 - val_accuracy: 0.9886
+Epoch 8/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0087 - accuracy: 0.9969 - val_loss: 0.0392 - val_accuracy: 0.9895
+Epoch 9/12
+469/469 [==============================] - 11s 22ms/step - loss: 0.0052 - accuracy: 0.9983 - val_loss: 0.0400 - val_accuracy: 0.9910
+Epoch 10/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0046 - accuracy: 0.9985 - val_loss: 0.0434 - val_accuracy: 0.9892
+Epoch 11/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0059 - accuracy: 0.9981 - val_loss: 0.0456 - val_accuracy: 0.9884
+Epoch 12/12
+469/469 [==============================] - 10s 22ms/step - loss: 0.0039 - accuracy: 0.9986 - val_loss: 0.0640 - val_accuracy: 0.9856
+0:02:09.316872
