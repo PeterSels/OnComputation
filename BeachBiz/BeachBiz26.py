@@ -130,8 +130,7 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
             print(f"### x3 = {x3}, x4 = {x4}, distance = {distance}")
             return distance
 
-        # Your existing 2 lines
-        dummy = 10 ########## ! This would mean optx4 is not used in the next use
+        dummy = 0
         distances, times = \
             zip(*[time_and_distance_swim_run_swim_water_to_water(x, dummy, x2, y1, y2, v_sand, v_water) for x in
                   np.linspace(0, x2 + 5, 400)])
@@ -139,7 +138,6 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
         # Now finding optimal x3 and x4 for time
         initial_guess = [x2 / 4 , 3 * x2 / 4]  # Guessing midpoint values for x3 and x4
         bounds = [(0, x2 + 5), (0, x2 + 5)]
-        #bounds = [(0, x2), (0, x2)]
         result_time = minimize(time_objective, initial_guess, args=(x2, y1, y2, v_sand, v_water), bounds=bounds)
 
         if result_time.success:
@@ -150,7 +148,6 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
         # Finding optimal x3 and x4 for distance
         result_distance = minimize(distance_objective, initial_guess, args=(x2, y1, y2, v_sand, v_water),
                                    bounds=bounds,
-                                   #method='TNC',
                                    options={'maxiter': 1000,
                                             'ftol': 0.01, # is in meter, 1 cm is good enough for beach purposes!
                                             'gtol': 0.001
@@ -192,7 +189,7 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
             ax[1].set_title("total time plot")
             ax[1].set_xlabel('x4')
             ax[1].set_ylabel('x3')
-            ##
+
             n_plot_rows = 2
 
             ax[0].axhline(x3_dist_opt, color='r', linestyle='--', label=f'dist optimal x3 = {x3_dist_opt:.2f}')
@@ -204,14 +201,14 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
         i = n_plot_rows
         ax[i].set_aspect('equal', 'box')
 
-        # 1
+        # water to water: indirect
         opt_x3, opt_x4, optimal_time_indirect = find_optimal_x3_x4(x2, y1, y2, v_sand, v_water)
         print(f'    optimal_time_indirect = {optimal_time_indirect}')
         optimal_time_indirect_again, corresponding_distance_indirect = \
             time_and_distance_swim_run_swim_water_to_water(opt_x3, opt_x4, x2, y1, y2, v_sand, v_water)
         print(f'    optimal_time_indirect_again = {optimal_time_indirect_again}')
 
-        # 2
+        # water to water: direct
         time_swim_direct, corresponding_distance_swim_direct = \
             time_and_distance_direct_swim_water_to_water(x2, y2, y1, v_water)
         print(f'    time_swim_direct = {time_swim_direct}')
@@ -274,11 +271,10 @@ def plot_scenario(col, x2, y2, y1, v_sand, v_water, scenario, ax):
         ax[i].legend(loc='upper right')
 
 
+# Scenario parameters
 scenarios = [(5, 2), (3, 2), (2, 2), (2, 3)]
 n_cols = len(scenarios)
 
-
-# Scenario parameters
 test_sand_to_water = True
 if test_sand_to_water:
     x2, y2, y1 = 50, -20, 15
